@@ -193,7 +193,25 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
 .pr b{font:800 24px/1.05 var(--hd)}
 .pkg{margin-left:auto;font-size:15px;color:var(--mut)}
 
-/* 6. воронка */
+/* 6. шесть шагов */
+.shagi{list-style:none;margin:36px 0 0;padding:0;max-width:900px}
+.sh{display:grid;grid-template-columns:72px 1fr;gap:20px;padding:22px 24px;background:var(--pl);border:1px solid var(--li);border-radius:18px}
+.shn{font:800 60px/.85 var(--hd);color:var(--or)}
+.sht h3{font:800 32px/1 var(--hd);margin:0 0 6px;letter-spacing:.01em}
+.shf{margin:0 0 8px;font:italic 400 20px/1.3 var(--sr);color:var(--or2)}
+.sht p:last-child{margin:0;font-size:17px;line-height:1.45;color:var(--tx2)}
+.sty{display:flex;align-items:center;gap:14px;margin:0 0 0 46px;padding:10px 0 10px 20px;border-left:2px dashed rgba(254,106,0,.55)}
+.sta{display:grid;place-items:center;flex:none;width:36px;height:36px;border-radius:50%;background:rgba(254,106,0,.14);color:var(--or)}
+.sty .lb{margin:0 0 2px}
+.stv{margin:0;font-size:17px;line-height:1.35;color:var(--tx2)}
+.stv b{color:var(--tekst)}
+.sty.fin{margin-top:0;border-left-color:transparent}
+.sty.fin>div{padding:14px 20px;border-radius:14px;background:var(--or)}
+.sty.fin .lb,.sty.fin .stv,.sty.fin .stv b{color:#1a0c02}
+.sty.fin .stv{font:800 30px/1 var(--hd)}
+.sty.fin .sta{background:var(--or);color:#1a0c02}
+
+/* 7. воронка */
 .vor{list-style:none;margin:36px 0 30px;padding:0;max-width:960px}
 .vor li{display:grid;grid-template-columns:200px 1fr;column-gap:26px;margin:0 0 3px}
 .vs{display:grid;place-items:center;min-height:100%;background:rgba(254,106,0,var(--o));font:800 34px/1 var(--hd);color:var(--tekst);
@@ -204,8 +222,25 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
 .vt p b{font:800 26px/1 var(--hd);color:var(--tekst);letter-spacing:.01em}
 .vt .sch{display:flex;gap:10px;align-items:flex-start;margin-top:8px;color:var(--or2);font-weight:700;font-size:17px;line-height:1.4}
 .gk{width:20px;height:20px;flex:none;margin-top:2px}
+.vb{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px!important}
+.vb .bdg{padding:5px 10px 5px 8px;border-radius:9px;background:rgba(254,106,0,.12);border:1px solid rgba(254,106,0,.35);font-size:14px}
+.vor+.tx{margin-bottom:22px}
 
-/* 7. этапы */
+/* 8. результаты по нишам */
+.kr{margin:24px 0 0;padding:clamp(22px,3vw,32px);background:var(--pl);border:1px solid var(--li);border-top:3px solid var(--or);border-radius:18px;display:grid;grid-template-columns:minmax(220px,1fr) 2.2fr;gap:clamp(20px,3.4vw,44px)}
+.kr h3{font:800 34px/1 var(--hd);margin:0 0 12px}
+.krv{margin:0;font-size:18px;line-height:1.4;color:var(--tekst)}
+.kr dl{margin:0}
+.krs{display:grid;grid-template-columns:150px 1fr;gap:14px;padding:11px 0;border-top:1px solid var(--li)}
+.krs:first-child{border-top:0;padding-top:0}
+.krs dt{font:700 14px/1.5 'Sofia Sans';letter-spacing:.07em;text-transform:uppercase;color:var(--or2)}
+.krs dd{margin:0;font-size:17px;line-height:1.45;color:var(--tx2)}
+.krs dd b{color:var(--tekst);white-space:nowrap}
+.krs.vs2{margin-top:6px;padding:12px 14px;border:0;border-radius:12px;background:rgba(254,106,0,.10)}
+.krs.vs2{grid-template-columns:150px 1fr;margin-left:-14px;margin-right:-14px}
+.kr+.ist,.kr~.ist{margin-top:18px}
+
+/* 9. этапы */
 .et{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:e}
 .et li{position:relative;padding:24px 22px;background:var(--pl);border:1px solid var(--li);border-top:3px solid var(--gr);border-radius:18px;display:flex;flex-direction:column}
 .et li.sei{border-top-color:var(--or)}
@@ -216,7 +251,23 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
 .prv{display:flex;gap:10px;margin:auto 0 0!important;padding-top:14px;border-top:1px solid var(--li);color:var(--tekst)!important;font-weight:700}
 .prv .gk{color:var(--or)}
 
-/* 8. время и цена */
+/* 10. как работаем */
+.var2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:34px 0 0}
+.var{padding:clamp(22px,3vw,30px);background:var(--pl);border:1px solid var(--li);border-radius:18px}
+.var.gl{border:1.5px solid rgba(254,106,0,.6);background:linear-gradient(160deg,rgba(254,106,0,.16),var(--pl) 60%)}
+.var h3{font:800 34px/1 var(--hd);margin:0 0 16px}
+.var>p:last-child{margin:0;color:var(--tx2)}
+.chp6{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chp6 li{display:inline-flex;align-items:center;gap:7px;padding:6px 11px 6px 6px;border-radius:999px;font:700 15px/1 'Sofia Sans';white-space:nowrap}
+.chp6 li span{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;font-size:14px}
+.chp6 li.on{background:var(--or);color:#1a0c02}
+.chp6 li.on span{background:#1a0c02;color:var(--or)}
+.chp6 li.vy6{border:1.5px dashed rgba(254,106,0,.55);color:var(--tekst)}
+.chp6 li.vy6 span{background:rgba(254,106,0,.18);color:var(--or2)}
+.priem{display:flex;gap:16px;align-items:flex-start;margin:16px 0 0;padding:22px 24px;border-radius:18px;background:rgba(254,106,0,.09);border-left:3px solid var(--or)}
+.priem .gk{width:30px;height:30px;color:var(--or);margin-top:0}
+.priem h3{font:800 30px/1 var(--hd);margin:0 0 8px}
+.priem p{margin:0;color:var(--tx2)}
 .dv{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
 .chasy{margin:0}
 .chl{display:flex;gap:4px;height:38px}
@@ -226,10 +277,6 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
 .chp span{min-width:0;font-size:15px;line-height:1.25;color:var(--mut);white-space:nowrap}
 .chp span:last-child{text-align:right}
 .chp b{display:block;font:800 30px/1 var(--hd);color:var(--tekst)}
-.cena{margin:36px 0 0;padding:clamp(24px,3.4vw,38px);border-radius:20px;background:linear-gradient(135deg,rgba(254,106,0,.22),var(--pl) 70%);border:1px solid rgba(254,106,0,.45);max-width:820px}
-.cena .cl{margin:0 0 10px;font:700 17px/1.3 'Sofia Sans';color:var(--or2)}
-.cena .ch{margin:0 0 14px;font:800 clamp(40px,5.6vw,64px)/1 var(--hd);color:var(--tekst)}
-.cena .cd{margin:0;color:var(--tx2)}
 .chest{margin:18px 0 0;padding:22px;border-left:3px solid var(--or);background:rgba(254,106,0,.09);border-radius:0 14px 14px 0;max-width:46em}
 .chest p{margin:0;color:var(--tx2)}
 .chest b{color:var(--tekst)}
@@ -242,7 +289,7 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
 .avtor img.e{width:48px;height:48px;clip-path:inset(0 0 9% 0)}
 .avtor b{display:block;font-size:20px}
 .avtor span{font-size:16px;color:var(--mut)}
-.svyaz{display:flex;gap:12px;margin:30px 0 16px}
+.svyaz{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 16px}
 .knopka{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:14px 26px;border-radius:14px;background:var(--or);color:#1a0c02;font:700 19px/1 'Sofia Sans';text-decoration:none}
 .knopka.vt{background:transparent;color:var(--tekst);border:1.5px solid var(--li)}
 .knopka svg{width:22px;height:22px;flex:none}
@@ -260,7 +307,7 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
  .emb{position:absolute;top:18px;left:18px;width:52px;height:52px;margin:0;z-index:2}
  .fk{grid-template-columns:1fr}
  .ref{grid-template-columns:repeat(3,1fr)}
- .stg,.stg2,.dv{grid-template-columns:1fr}
+ .stg,.stg2,.dv,.var2,.kr{grid-template-columns:1fr}
  .et{grid-template-columns:1fr}
  .et li{display:block}
  .prv{margin-top:14px!important}
@@ -292,6 +339,16 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
  .vor li{grid-template-columns:76px 1fr;column-gap:16px}
  .vs{font-size:28px}
  .vt p b{font-size:24px}
+ .sh{grid-template-columns:44px 1fr;gap:12px;padding:18px 16px}
+ .shn{font-size:46px}
+ .sht h3{font-size:28px}
+ .shf{font-size:18px}
+ .sty{margin-left:22px;padding-left:14px;gap:10px}
+ .sty.fin .stv{font-size:26px}
+ .krs,.krs.vs2{grid-template-columns:1fr;gap:4px}
+ .kr h3,.var h3{font-size:30px}
+ .priem{padding:18px 16px;gap:12px}
+ .priem h3{font-size:26px}
  .pkg{margin-left:32px;flex-basis:100%}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ob img{transition:none}}
@@ -526,19 +583,52 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
 </section>
 <section class="ek" id="e6">
  <div class="in">
-  <p class="nom">Воронка: от ролика до постоянного заказчика</p>
-  <h2>Путь человека, который увидел Вас впервые.</h2>
-  <ol class="vor"><li style="--a:1.0;--b:0.86;--o:0.28"><span class="vs">1</span>
-   <div class="vt"><p><b>Ролик</b> в YouTube Shorts и Instagram Reels, каждый день.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем просмотры и досмотр.</p></div></li><li style="--a:0.86;--b:0.72;--o:0.42"><span class="vs">2</span>
-   <div class="vt"><p><b>Подписка</b> - на серию с узнаваемым началом.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем подписки на тысячу просмотров.</p></div></li><li style="--a:0.72;--b:0.6;--o:0.57"><span class="vs">3</span>
-   <div class="vt"><p><b>Telegram</b> - ссылка с меткой в каждом ролике; в канале закреплено «с чего начать».</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем переходы по меткам: видно, какой ролик привёл человека.</p></div></li><li style="--a:0.6;--b:0.5;--o:0.71"><span class="vs tm">4</span>
-   <div class="vt"><p><b>Бесплатный материал</b> в Telegram - памятка из Ваших же выпусков. Например, «План на 72 часа, если в бизнесе пожар»: такой выпуск у Вас уже есть.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем, сколько забрали.</p></div></li><li style="--a:0.5;--b:0.42;--o:0.86"><span class="vs tm">5</span>
-   <div class="vt"><p><b>Заявка</b> на диагностическую сессию - формат с Вашего сайта.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем заявки.</p></div></li><li style="--a:0.42;--b:0.34;--o:1.00"><span class="vs tm">6</span>
-   <div class="vt"><p><b>Работа и повторная работа</b>: консультация, лекция для компании, проектное сопровождение, выступление.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем оплаты и возвраты.</p></div></li></ol>
-  <div class="tx"><p>Ориентиров по конверсии у лидеров нет: эти цифры никто не публикует. Свои мы увидим за первый месяц и по ним решим, какой шаг воронки чинить первым.</p></div>
+  <p class="nom">Шесть шагов от знания до ролика</p>
+  <h2>Ваше знание становится роликом за шесть шагов. На каждом его можно потерять.</h2>
+  <div class="tx"><p>То, что Вы знаете, - сырьё. Чем кончается один шаг, тем начинается следующий, но сам из предыдущего он не вытекает: сильный сценарий не значит, что ролик досмотрят, а хорошая подача не значит, что снят чистый звук.</p></div>
+  <ol class="shagi">
+   <li class="sh"><span class="shn">1</span><div class="sht"><h3>Экспертиза</h3><p class="shf">Точка отсчёта</p><p>Из этого делается ролик, но это ещё не ролик.</p></div></li>
+   <li class="sty" aria-label="выход шага 1"><span class="sta"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"/></svg></span><div><p class="lb">выход 1 · вход 2</p><p class="stv"><b>Знание:</b> опыт, случаи, числа</p></div></li>
+   <li class="sh"><span class="shn">2</span><div class="sht"><h3>Драматургия</h3><p class="shf">«Экспертиза - ещё не сценарий»</p><p>Экспертиза собрана в сюжет: одна мысль на ролик.</p></div></li>
+   <li class="sty" aria-label="выход шага 2"><span class="sta"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"/></svg></span><div><p class="lb">выход 2 · вход 3</p><p class="stv"><b>Сценарий:</b> мысль, хук, поворот, финал</p></div></li>
+   <li class="sh"><span class="shn">3</span><div class="sht"><h3>Удержание</h3><p class="shf">«Сценарий - ещё не удержание»</p><p>Ставка в первые 3 секунды, новое каждые <span class="nw">3-7 </span>секунд, обещание закрыто в конце.</p></div></li>
+   <li class="sty" aria-label="выход шага 3"><span class="sta"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"/></svg></span><div><p class="lb">выход 3 · вход 4</p><p class="stv"><b>Сценарий, который досматривают до конца</b></p></div></li>
+   <li class="sh"><span class="shn">4</span><div class="sht"><h3>Подача</h3><p class="shf">«Удержание - ещё не подача»</p><p>Подача - множитель: сильный текст без неё не держит.</p></div></li>
+   <li class="sty" aria-label="выход шага 4"><span class="sta"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"/></svg></span><div><p class="lb">выход 4 · вход 5</p><p class="stv"><b>Живое исполнение:</b> свои слова, свой темп</p></div></li>
+   <li class="sh"><span class="shn">5</span><div class="sht"><h3>Продакшн</h3><p class="shf">«Подача - ещё не материал»</p><p>Вертикаль на уровне глаз, один план, петличка.</p></div></li>
+   <li class="sty" aria-label="выход шага 5"><span class="sta"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"/></svg></span><div><p class="lb">выход 5 · вход 6</p><p class="stv"><b>Материал:</b> дубли целиком, чистый звук</p></div></li>
+   <li class="sh"><span class="shn">6</span><div class="sht"><h3>Постпродакшн</h3><p class="shf">«Материал - ещё не ролик»</p><p>Склейки в паузах, субтитры слово в слово, плашка, подпись и призыв.</p></div></li>
+   <li class="sty fin" aria-label="выход шага 6"><span class="sta"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"/></svg></span><div><p class="lb">выход 6 · итог</p><p class="stv"><b>Ролик к выпуску</b></p></div></li>
+  </ol>
  </div>
 </section>
 <section class="ek" id="e7">
+ <div class="in">
+  <p class="nom">Воронка: от первого просмотра до заказчика</p>
+  <h2>Охват, узнаваемость, подписка, продажа. Каждый из 12 роликов работает на свой уровень.</h2>
+  <div class="tx"><p>Это та же лестница, что выше, разложенная по роликам: охват - ступень 1, узнаваемость и подписка - ступень 2, продажа - ступени 3 и 4.</p></div>
+  <ol class="vor"><li style="--a:1.0;--b:0.8;--o:0.28"><span class="vs">1</span>
+   <div class="vt"><p class="vb"><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span></p><p><b>Охват.</b> Ролики <span class="nw">1-4</span>: первые выпуски «Бывшего мэра», «Вердикта», «Собеседования» и «Посчитаем». В конце - просьба переслать тому, кому это нужно.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем просмотры и досмотр.</p></div></li><li style="--a:0.8;--b:0.62;--o:0.52"><span class="vs">2</span>
+   <div class="vt"><p class="vb"><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span></p><p><b>Узнаваемость.</b> Пять серий, и каждая из выпуска в выпуск начинается одинаково: «Я был главой района», «Стоп», «Считаю при Вас». Все 12 роликов - выпуски этих серий.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем, сколько зрителей присылают вопросы и ролики в серию.</p></div></li><li style="--a:0.62;--b:0.46;--o:0.76"><span class="vs tm">3</span>
+   <div class="vt"><p class="vb"><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span></p><p><b>Подписка.</b> Ролики <span class="nw">5-8</span>: шаблон обращения, план на 30 дней и таблица расчёта ждут в Telegram по ссылке с меткой, «Вердикт» зовёт подписаться на серию. В канале закреплено «с чего начать».</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем подписки на тысячу просмотров, переходы по меткам и сколько забрали материал.</p></div></li><li style="--a:0.46;--b:0.32;--o:1.00"><span class="vs tm">4</span>
+   <div class="vt"><p class="vb"><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 3</span><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="on"/></svg>ступень 4</span></p><p><b>Продажа.</b> Ролики <span class="nw">9-12 </span>ведут на Ваши форматы: диагностическая сессия, проектное сопровождение, экспертная консультация, лекция для компании. Через Telegram или кнопку «Обсудим вашу задачу».</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем заявки, оплаты и повторную работу.</p></div></li></ol>
+  <div class="tx"><p>Ориентиров по конверсии у лидеров нет: эти цифры никто не публикует. Свои мы увидим за первый месяц и по ним решим, какой уровень чинить первым.</p></div>
+  <a class="knopka vt" href="https://ilin20vek.github.io/bobrov-plan/scenarii.pdf" target="_blank" rel="noopener">Все 12 сценариев</a>
+ </div>
+</section>
+<section class="ek" id="e8">
+ <div class="in">
+  <p class="nom">Результаты по нишам</p>
+  <h2>К чему по этой воронке пришли люди в трёх кругах рядом с Вами.</h2>
+  <div class="tx"><p>Это не обещание Вам, а то, до чего дошли каналы с роликами того же устройства. В каждом круге - Ваши серии из 12 сценариев, которые идут по тому же пути.</p></div>
+  
+  <article class="kr"><header><p class="lb">круг 1</p><h3>Экономика простым языком</h3><p class="krv">Охват здесь самый большой, а у крупнейшего канала нет лица. Лицо - Ваше преимущество.</p></header><dl><div class="krs"><dt>Охват</dt><dd>«Украина и российский газ» - <b>15 198 152</b> просмотра у «Простой экономики».</dd></div><div class="krs"><dt>Узнаваемость</dt><dd>вопрос или новость в названии, без лица автора.</dd></div><div class="krs"><dt>Подписка</dt><dd>«Простая экономика» - <b>1,33 млн</b>, Михаил Хазин - <b>465 тыс.</b>, Евгений Коган - <b>145 тыс.</b></dd></div><div class="krs"><dt>Продажа</dt><dd>у Хазина ролики ведут на сайт, фонд и в Telegram.</dd></div><div class="krs vs2"><dt>Ваши серии</dt><dd>«Посчитаем» (ролики 4, 8, 9) и «Бывший мэр» (1, 5). Образец - «Кто владеет Газпромом?», <b>6 778 394</b>.</dd></div></dl></article>
+  <article class="kr"><header><p class="lb">круг 2</p><h3>Управление и карьера</h3><p class="krv">Здесь дальше всех прошли по воронке: ролик ведёт до заявки на обучение.</p></header><dl><div class="krs"><dt>Охват</dt><dd>Игорь Рыбаков, «Ответ Тинькову» - <b>9 651 517</b>; Игорь Рызов, «Как сбить цену при покупке товара?» - <b>6 845 189</b>.</dd></div><div class="krs"><dt>Узнаваемость</dt><dd>у Рызова - студия и один совет за <span class="nw">20-30 </span>секунд; у Гандапаса - нарезка интервью с крупным титром.</dd></div><div class="krs"><dt>Подписка</dt><dd>Рыбаков - <b>2,62 млн</b>, Рызов - <b>697 тыс.</b>, Гандапас - <b>662 тыс.</b>, Пётр Осипов - <b>224 тыс.</b></dd></div><div class="krs"><dt>Продажа</dt><dd>Рызов - демо-урок, Telegram-боты, семинары, корпоративное обучение; Гандапас - тренинги, коучинг на полгода, клуб по заявке; Осипов - тест или игра, затем бот и программа.</dd></div><div class="krs vs2"><dt>Ваши серии</dt><dd>«Собеседование» (ролики 3, 12; образец Рызова «Каверзные вопросы на собеседовании» - <b>2 506 992</b>) и «Посчитаем» (образец Осипова «Мне нужно минимум 1 000 000» - <b>2 180 997</b>).</dd></div></dl></article>
+  <article class="kr"><header><p class="lb">круг 3</p><h3>Учёные и сильные личности</h3><p class="krv">У Панчина лучшие ролики вышли в 2026 году: рост идёт сейчас.</p></header><dl><div class="krs"><dt>Охват</dt><dd>Александр Панчин, разбор чужого вирусного ролика - <b>4 562 402</b>; Михаил Кокляев, «Отвечаем подписчикам» - <b>2 082 565</b>.</dd></div><div class="krs"><dt>Узнаваемость</dt><dd>у Панчина - разбор чужого вирусного видео с плашкой имени; у Кокляева - ответы подписчикам.</dd></div><div class="krs"><dt>Подписка</dt><dd>Андрей Курпатов - <b>1,16 млн</b>, Панчин - <b>505 тыс.</b>, Кокляев - <b>245 тыс.</b></dd></div><div class="krs vs2"><dt>Ваши серии</dt><dd>«Вердикт» (ролики 2, 6, 10; образец Панчина «Существует ли Бог? Ответ астрофизика.» - <b>3 332 398</b>) и «Правила из зала» (7, 11; образец Кокляева).</dd></div></dl></article>
+  <p class="ist">Срез 08.11.2026, YouTube. Что продают учёные и сильные личности, мы не проверяли, поэтому строки «Продажа» у третьего круга нет.</p>
+ </div>
+</section>
+<section class="ek" id="e9">
  <div class="in">
   <p class="nom">Этапы</p>
   <h2>От 216 до 100 000: три этапа, у каждого своя проверка.</h2>
@@ -546,27 +636,28 @@ h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
   <ol class="et"><li class=sei><span class="ed">1</span><h3>Месяц первый: пилот.</h3><p>Первая съёмка - «Бывший мэр» и «Вердикт», ролики на первые две недели. Смотрим не на просмотры, а на то, досматривают ли и переходят ли в Telegram, и решаем, какой формат ведёт. Вторая съёмка - больше ведущего формата и «Посчитаем». Итого 30 роликов, ролик в день в YouTube и Instagram.</p><p class="prv"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Проверка: какой формат досматривают и с какого приходят подписчики.</span></p></li><li><span class="ed">2</span><h3>Месяцы второй-третий: формат-лидер.</h3><p>Снимаем больше того, что сработало, подключаем «Собеседование», воронка в Telegram собрана.</p><p class="prv"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Проверка: переходы и первые заявки.</span></p></li><li><span class="ed">3</span><h3>Дальше: серии и гости.</h3><p>Подкаст с Сарычевым уже собрал больше половины всех просмотров длинных выпусков: гость с именем работает.</p><p class="prv"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Проверка: рост подписчиков от месяца к месяцу.</span></p></li></ol>
  </div>
 </section>
-<section class="ek" id="e8">
+<section class="ek" id="e10">
  <div class="in">
-  <p class="nom">Что от Вас и сколько это стоит</p>
-  <h2>От Вас - около восьми часов в месяц. Остальное - наша работа.</h2>
+  <p class="nom">Как работаем</p>
+  <h2>Я могу взять все шесть шагов на себя. А можно - любой из них.</h2>
+  <div class="var2">
+   <article class="var gl"><p class="lb">вариант 1</p><h3>Все шесть шагов у меня</h3><ul class="chp6"><li class="on"><span>1</span>Экспертиза</li><li class="on"><span>2</span>Драматургия</li><li class="on"><span>3</span>Удержание</li><li class="on"><span>4</span>Подача</li><li class="on"><span>5</span>Продакшн</li><li class="on"><span>6</span>Постпродакшн</li></ul><p>От Вас - знание и время в кадре, остальное делаю я. Тогда с вероятностью близко к 100 % каждый шаг сделан как надо.</p></article>
+   <article class="var"><p class="lb">вариант 2</p><h3>Любой шаг на выбор</h3><ul class="chp6"><li class="vy6"><span>1</span>Экспертиза</li><li class="vy6"><span>2</span>Драматургия</li><li class="vy6"><span>3</span>Удержание</li><li class="vy6"><span>4</span>Подача</li><li class="vy6"><span>5</span>Продакшн</li><li class="vy6"><span>6</span>Постпродакшн</li></ul><p>Снимает и монтирует Ваша команда, а я беру те шаги, которые Вы назовёте.</p></article>
+  </div>
+  <div class="priem"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h3>На каждом шаге - моя приёмка</h3><p>Прямо говорю, достаточно ли хорошо снято и смонтировано, держит ли ролик - и что переделать.</p></div></div>
+  <h3 class="pz">От Вас - около восьми часов в месяц</h3>
   <div class="dv">
-   <div class="tx"><p>Новые форматы без Вас в кадре не снять. Две съёмки в месяц по три с половиной часа и час на то, чтобы согласовать темы. Снимаем на телефон с петличкой. Вопросы, сценарии, подборку роликов для «Вердикта» готовлю я. Монтаж, обложки, названия, выкладка по расписанию и разбор - тоже на мне.</p></div>
+   <div class="tx"><p>Новые форматы без Вас в кадре не снять. Две съёмки в месяц по три с половиной часа и час на то, чтобы согласовать темы. Снимаем на телефон с петличкой. Вопросы, сценарии, подборку роликов для «Вердикта» готовлю я.</p></div>
    <figure class="chasy">
     <div class="chl" aria-hidden="true"><i style="flex:3.5"></i><i style="flex:3.5"></i><i class="sv" style="flex:1"></i></div>
     <div class="chp"><span style="flex:3.5"><b>3,5 ч</b>съёмка</span><span style="flex:3.5"><b>3,5 ч</b>съёмка</span><span style="flex:1"><b>1 ч</b>темы</span></div>
     <figcaption class="ist">Ваше время в месяц, около 8 часов</figcaption>
    </figure>
   </div>
-  <div class="cena">
-   <p class="cl">Первый шаг - месяц пилота:</p>
-   <p class="ch">30 роликов, ролик в день, <span class="nw">30 000 ₽</span>.</p>
-   <p class="cd">Через месяц смотрим на отклик и договариваемся дальше.</p>
-  </div>
-  <div class="chest"><p><b>Честно:</b> просмотры числом не обещаю, этого не может никто. Обещаю ролики каждый день, в каждом - путь дальше, и разбор раз в месяц.</p></div>
+  <div class="chest"><p><b>Честно:</b> «близко к 100 %» - про работу на каждом шаге, а не про число просмотров: их раздаёт площадка. Обещаю ролики каждый день, в каждом - путь дальше, и разбор раз в месяц.</p></div>
  </div>
 </section>
-<section class="ek e9" id="e9">
+<section class="ek e9" id="e11">
  <div class="svet"></div>
  <div class="in">
   <p class="nom">Встреча</p>
