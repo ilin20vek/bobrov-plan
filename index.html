@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<!-- Собрано kod/sobrat.py из kod/shablon.html. Правка вида - в shablon.html, правка слов - в tekst.md и sobrat.py. -->
+<title>Дмитрий, вот как в Вашей теме собирают сотни тысяч зрителей</title>
+<meta name="description" content="Бизнес-план канала на YouTube и в Instagram">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Дмитрий, вот как в Вашей теме собирают сотни тысяч зрителей. И как пройти этот путь Вам">
+<meta property="og:description" content="Бизнес-план канала на YouTube и в Instagram">
+<meta property="og:url" content="https://ilin20vek.github.io/bobrov-plan/">
+<meta property="og:image" content="https://ilin20vek.github.io/bobrov-plan/i/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/sofia-sans-extra-condensed-800.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Sofia Sans';src:url(fonts/sofia-sans-400.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Sofia Sans';src:url(fonts/sofia-sans-700.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'SSEC';src:url(fonts/sofia-sans-extra-condensed-800.woff2) format('woff2');font-weight:800;font-display:swap}
+@font-face{font-family:'OST';src:url(fonts/old-standard-tt-italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}
+/* --fon, --tekst, --akcent читает kod/og.py для превью */
+:root{--fon:#0d0b0a;--tekst:#f6f1eb;--akcent:#FE6A00;--pl:#18130f;--pl2:#241a13;--li:rgba(255,190,140,.15);--tx2:#e2d9cf;--mut:#b4a99e;--or:#FE6A00;--or2:#ff8b3d;--gr:#6f665e;--hd:'SSEC','Arial Narrow',sans-serif;--sr:'OST',Georgia,serif}
+*{box-sizing:border-box}
+html{background:var(--fon);color:var(--tekst);-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font:400 18px/1.55 'Sofia Sans',system-ui,sans-serif}
+img,svg{max-width:100%}
+a{color:var(--or2)}
+p{margin:0 0 1em}
+h3,h4{margin:0}
+.nw{white-space:nowrap}
+.c{color:var(--or)}
+.vy{color:var(--or)!important}
+/* экран */
+.ek{position:relative;padding:clamp(72px,11vh,128px) 20px clamp(60px,9vh,110px)}
+.ek+.ek{border-top:1px solid var(--li)}
+.in{position:relative;max-width:1080px;margin:0 auto}
+.nom{display:flex;align-items:center;gap:12px;margin:0 0 18px;font:700 15px/1.2 'Sofia Sans';color:var(--or2);letter-spacing:.02em}
+.nom:before{content:"";flex:none;width:28px;height:2px;background:var(--or)}
+h1,h2{font-family:var(--hd);font-weight:800;margin:0 0 26px;letter-spacing:.003em}
+h1{font-size:clamp(42px,5.4vw,76px);line-height:.98}
+h2{font-size:clamp(36px,5.2vw,62px);line-height:1;max-width:19em}
+.tx{max-width:40em;color:var(--tx2)}
+.tx p{margin:0 0 1em}
+.ist{display:block;margin-top:12px;font-size:14px;line-height:1.35;color:var(--mut)}
+.lb{margin:0 0 8px;font:700 14px/1.2 'Sofia Sans';letter-spacing:.07em;text-transform:uppercase;color:var(--or2)}
+.pz{font:800 clamp(30px,3.6vw,42px)/1.05 var(--hd);margin:56px 0 22px;max-width:22em}
+.pov{display:inline-flex;align-items:center;gap:16px;font:italic 400 clamp(25px,3.4vw,32px)/1.2 var(--sr);color:#f0e6dc;text-decoration:none}
+.pov .pk{flex:none;width:46px;height:46px;border:1.5px solid var(--or);border-radius:50%;display:grid;place-items:center;color:var(--or)}
+/* значок лестницы и бейдж ступени */
+.ms{width:26px;height:21px;flex:none}
+.ms .on{fill:var(--or)} .ms .of{fill:rgba(255,220,190,.22)}
+.ms.big{width:30px;height:24px}
+.bdg{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 'Sofia Sans';color:var(--tekst);white-space:nowrap}
+.obv{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;font:700 14px/1 'Sofia Sans';letter-spacing:.07em;text-transform:uppercase;color:var(--mut)}
+.obv .bdg{letter-spacing:0;text-transform:none;padding:6px 10px 6px 8px;border-radius:9px;background:rgba(254,106,0,.12);border:1px solid rgba(254,106,0,.35)}
+
+/* 0. первый экран: лицо справа, текст слева; до 900 px лицо сверху, текст под подбородком */
+.e0{min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding-top:48px;padding-bottom:48px}
+.e0 .svet{position:absolute;inset:0;background:radial-gradient(52% 68% at 76% 42%,rgba(254,106,0,.40),transparent 70%)}
+.e0 .lico{position:absolute;right:0;top:0;height:100%;width:52%;object-fit:cover;object-position:50% 22%;
+ -webkit-mask-image:linear-gradient(to left,#000 50%,transparent 100%),linear-gradient(to top,transparent 0,#000 26%);-webkit-mask-composite:source-in;
+ mask-image:linear-gradient(to left,#000 50%,transparent 100%),linear-gradient(to top,transparent 0,#000 26%);mask-composite:intersect}
+.e0 .in{width:100%}
+.e0 .tekst{max-width:min(600px,46vw)}
+.emb{display:block;width:64px;height:64px;margin:0 0 34px;clip-path:inset(0 0 9% 0)}
+.obr{display:block;font:italic 400 clamp(32px,4.4vw,50px)/1.1 var(--sr);color:var(--or2);margin-bottom:10px;letter-spacing:0}
+.podp{display:flex;align-items:center;gap:16px;margin:30px 0 0}
+.podp img{width:60px;height:60px;border-radius:50%;flex:none;object-fit:cover}
+.podp p{margin:0;font-size:17px;line-height:1.4;color:var(--tx2);max-width:28em}
+.e0 .pov{margin-top:40px}
+
+/* 1. плитки-числа и форматы */
+.plit{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:34px 0 0}
+.plit div{border-top:2px solid var(--gr);padding-top:12px;font-size:16px;line-height:1.3;color:var(--mut)}
+.plit div.vy{border-color:var(--or)}
+.plit b{display:block;font:800 clamp(42px,5.4vw,66px)/1 var(--hd);color:var(--tekst);margin-bottom:8px;white-space:nowrap}
+.plit .vy b{color:var(--or)}
+.plit figcaption{grid-column:1/-1;margin-top:0}
+.fk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.fk article,.obsh{background:var(--pl);border:1px solid var(--li);border-radius:18px;padding:22px}
+.fk h4{font:800 28px/1.05 var(--hd);margin:0 0 10px}
+.fk article p:last-child{margin:0;font-size:17px;line-height:1.45;color:var(--tx2)}
+.obsh{margin:16px 0 0;display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:center}
+.obsh .obv{margin:0}
+.obsh p:last-child{margin:0;color:var(--tx2)}
+.vyvod{margin:28px 0 0;padding:4px 0 4px 24px;border-left:3px solid var(--or);max-width:46em}
+.vyvod p{margin:0;font-size:clamp(19px,1.9vw,22px);line-height:1.5;color:var(--tekst)}
+
+/* 2. лестница */
+.obz{list-style:none;margin:40px 0 64px;padding:0;display:flex;flex-direction:column-reverse;max-width:900px}
+.obz li{margin-left:calc(var(--n) * 12%)}
+.obz a{display:flex;align-items:center;gap:16px;min-height:76px;padding:12px 18px;background:linear-gradient(90deg,rgba(254,106,0,calc(.10 + var(--n) * .06)),var(--pl) 85%);border-top:3px solid var(--or);border-left:3px solid var(--or);color:var(--tekst);text-decoration:none}
+.obz .sn{flex:none;font:800 48px/1 var(--hd);color:var(--or);min-width:28px}
+.obz .stt{font-size:18px;line-height:1.3;color:var(--tx2)}
+.obz .stt b{font:800 28px/1 var(--hd);color:var(--tekst);letter-spacing:.01em}
+.stp{margin:0 0 28px;padding:clamp(22px,3vw,34px);background:var(--pl);border:1px solid var(--li);border-radius:20px;scroll-margin-top:20px}
+.stp header{display:flex;align-items:flex-start;gap:18px;margin-bottom:22px}
+.snb{flex:none;font:800 clamp(72px,9vw,108px)/.8 var(--hd);color:var(--or)}
+.stp .sl{display:flex;align-items:center;gap:10px;margin:2px 0 8px;font:700 15px/1 'Sofia Sans';color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.stp h3{font:800 clamp(30px,3.8vw,44px)/1.02 var(--hd)}
+.stg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);align-items:start}
+.stg>div>p:not(.lb){color:var(--tx2)}
+.spr{background:rgba(0,0,0,.28);border-radius:14px;padding:18px}
+.smy{margin:22px 0 0;padding:18px 22px;border-radius:14px;background:rgba(254,106,0,.13);border:1px solid rgba(254,106,0,.4)}
+.smy p:last-child{margin:0;font-size:clamp(18px,1.7vw,20px);color:var(--tekst)}
+/* пример ступени 1: полосы */
+.po{margin:0 0 18px}
+.pl{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px;font-size:16px;color:#ddd3c8}
+.pl b{font:800 clamp(28px,3vw,34px)/1 var(--hd);color:var(--tekst);white-space:nowrap}
+.tr{position:relative;height:28px;background:rgba(255,255,255,.05);border-radius:5px;overflow:hidden}
+.tr i{position:absolute;left:0;top:0;bottom:0;width:max(var(--w),3px);background:#9a8f85;border-radius:5px}
+.tr i.or{background:var(--or)}
+/* пример ступени 2: точки */
+.tchg{display:grid;grid-template-columns:repeat(30,1fr);gap:3px}
+.tchg i{display:block;aspect-ratio:1;border-radius:50%;background:rgba(255,220,190,.2)}
+.tchg i.on{background:var(--or);box-shadow:0 0 0 3px rgba(254,106,0,.35)}
+.tz{display:inline-block;width:10px;height:10px;border-radius:50%;background:rgba(255,220,190,.35);vertical-align:0;margin-right:6px}
+.tz.on{background:var(--or);margin-left:6px}
+/* пример ступени 3: дороги */
+.dr{padding:12px 0;border-bottom:1px solid var(--li)}
+.dr:last-child{border:0;padding-bottom:0}
+.dr:first-child{padding-top:0}
+.dr>b{display:block;margin-bottom:8px;font:700 16px/1.2 'Sofia Sans';color:var(--mut)}
+.dr.vy>b{color:var(--or2)}
+.cep{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.cep span{padding:7px 12px;border-radius:10px;background:var(--pl2);border:1px solid var(--li);font-size:16px;line-height:1.25;color:var(--tekst)}
+.ar{width:26px;height:12px;flex:none;color:var(--or)}
+.ar.net{width:40px;height:16px;color:var(--gr)}
+/* пример ступени 4: лестницы продуктов */
+.lpr{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.lpr .ist{grid-column:1/-1;margin-top:0}
+.lp>b{display:block;margin-bottom:10px;font:700 16px/1.2 'Sofia Sans';color:var(--mut)}
+.lp.vy>b{color:var(--or2)}
+.lp ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column-reverse;gap:4px}
+.lp li{margin-left:calc(var(--k) * 8px);padding:6px 10px;border-left:3px solid #9a8f85;background:var(--pl2);font-size:16px;line-height:1.25;color:var(--tx2)}
+.lp.vy li{border-color:var(--or);background:rgba(254,106,0,.14);color:var(--tekst)}
+
+/* 3. референсы */
+.ref{display:grid;grid-template-columns:repeat(5,1fr);gap:28px 16px;margin:34px 0 0;padding:0;list-style:none}
+.ob{display:block;position:relative;border-radius:14px;overflow:hidden;box-shadow:0 16px 44px rgba(0,0,0,.5);outline-offset:3px}
+.ob:focus-visible{outline:3px solid var(--or)}
+.ob img{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;transition:transform .4s ease}
+.ob:hover img{transform:scale(1.04)}
+.igr{position:absolute;right:10px;bottom:10px;width:42px;height:42px;border-radius:50%;background:var(--or);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.45)}
+.ref h3{margin:14px 0 8px;font:800 24px/1.05 var(--hd)}
+.cf{display:flex;gap:14px;margin:0 0 10px}
+.cf span{font-size:14px;line-height:1.25;color:var(--mut)}
+.cf b{display:block;font:800 24px/1.05 var(--hd);color:var(--tekst);white-space:nowrap}
+.cf span+span b{color:var(--or2)}
+.vz{margin:0;font-size:16px;line-height:1.35;color:var(--tx2)}
+.vz span{display:block;font:700 14px/1.2 'Sofia Sans';letter-spacing:.07em;text-transform:uppercase;color:var(--mut);margin-bottom:3px}
+
+/* 4. принципы */
+.prn{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.prn li{background:var(--pl);border:1px solid var(--li);border-radius:18px;padding:22px}
+.pnm{display:block;font:800 64px/.85 var(--hd);color:var(--or);margin-bottom:12px}
+.prn h3{font:800 28px/1.05 var(--hd);margin:0 0 10px}
+.prn p{margin:0;font-size:17px;line-height:1.45;color:var(--tx2)}
+
+/* 5. форматы */
+.fm{display:grid;grid-template-columns:1fr 240px;grid-template-areas:"h o" "r o";gap:6px 36px;margin:28px 0 0;padding:clamp(22px,3vw,34px);background:var(--pl);border:1px solid var(--li);border-radius:20px;scroll-margin-top:20px}
+.fmh{grid-area:h}
+.fmo{grid-area:o;margin:0}
+.fmr{grid-area:r}
+.fnum{margin:0 0 6px;font:800 22px/1 var(--hd);color:var(--or)}
+.fm h3{font:800 clamp(34px,4.2vw,50px)/1 var(--hd);margin:0 0 16px}
+.fmh p:not(.fnum){color:var(--tx2)}
+.fmh p b,.sy b{color:var(--tekst)}
+.fmo figcaption{margin-top:12px;font-size:15px;line-height:1.4;color:var(--mut)}
+.fmo figcaption b{color:var(--tx2)}
+.ff{margin:6px 0 24px;padding:20px 22px;border-left:3px solid var(--or);background:rgba(254,106,0,.08);border-radius:0 14px 14px 0}
+.ff .lb{margin-bottom:6px}
+.rem{margin:0 0 8px;font-size:15px;line-height:1.4;color:var(--mut)}
+.ff blockquote{margin:0;font:italic 400 clamp(23px,2.5vw,30px)/1.28 var(--sr);color:var(--tekst)}
+.fst{list-style:none;margin:0 0 18px;padding:0}
+.fst li{display:grid;grid-template-columns:128px 1fr;gap:12px;align-items:start;padding:10px 0;border-top:1px solid var(--li);font-size:17px;line-height:1.4;color:var(--tx2)}
+.fst li:last-child{border-bottom:1px solid var(--li)}
+.fst .bdg{padding-top:1px}
+.sy{margin:0;font-size:17px;color:var(--tx2)}
+.start{margin-top:8px}
+.stg2{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,48px);align-items:start}
+.prio{display:grid;gap:8px}
+.pilot{display:grid;gap:8px;padding:12px;border:2px solid var(--or);border-radius:16px;position:relative;margin-bottom:6px}
+.pkl{margin:0 0 2px;font:700 14px/1 'Sofia Sans';letter-spacing:.08em;text-transform:uppercase;color:var(--or)}
+.pr{display:flex;align-items:center;gap:14px;min-height:56px;padding:10px 14px;border-radius:10px;background:var(--pl2);color:var(--tekst);text-decoration:none;flex-wrap:wrap}
+.pr.on{background:var(--or);color:#1a0c02}
+.pn{flex:none;font:800 30px/1 var(--hd);color:var(--or);min-width:18px}
+.pr.on .pn{color:#1a0c02}
+.pr b{font:800 24px/1.05 var(--hd)}
+.pkg{margin-left:auto;font-size:15px;color:var(--mut)}
+
+/* 6. воронка */
+.vor{list-style:none;margin:36px 0 30px;padding:0;max-width:960px}
+.vor li{display:grid;grid-template-columns:200px 1fr;column-gap:26px;margin:0 0 3px}
+.vs{display:grid;place-items:center;min-height:100%;background:rgba(254,106,0,var(--o));font:800 34px/1 var(--hd);color:var(--tekst);
+ clip-path:polygon(calc((1 - var(--a)) * 50%) 0,calc((1 + var(--a)) * 50%) 0,calc((1 + var(--b)) * 50%) 100%,calc((1 - var(--b)) * 50%) 100%)}
+.vs.tm{color:#1a0c02}
+.vt{padding:16px 0 18px}
+.vt p{margin:0;color:var(--tx2)}
+.vt p b{font:800 26px/1 var(--hd);color:var(--tekst);letter-spacing:.01em}
+.vt .sch{display:flex;gap:10px;align-items:flex-start;margin-top:8px;color:var(--or2);font-weight:700;font-size:17px;line-height:1.4}
+.gk{width:20px;height:20px;flex:none;margin-top:2px}
+
+/* 7. этапы */
+.et{list-style:none;margin:36px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:e}
+.et li{position:relative;padding:24px 22px;background:var(--pl);border:1px solid var(--li);border-top:3px solid var(--gr);border-radius:18px;display:flex;flex-direction:column}
+.et li.sei{border-top-color:var(--or)}
+.ed{display:block;font:800 56px/.85 var(--hd);color:var(--gr);margin-bottom:14px}
+.et li.sei .ed{color:var(--or)}
+.et h3{font:800 28px/1.05 var(--hd);margin:0 0 12px}
+.et p{font-size:17px;line-height:1.45;color:var(--tx2)}
+.prv{display:flex;gap:10px;margin:auto 0 0!important;padding-top:14px;border-top:1px solid var(--li);color:var(--tekst)!important;font-weight:700}
+.prv .gk{color:var(--or)}
+
+/* 8. время и цена */
+.dv{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.chasy{margin:0}
+.chl{display:flex;gap:4px;height:38px}
+.chl i{display:block;background:var(--or);border-radius:6px}
+.chl i.sv{background:rgba(254,106,0,.45)}
+.chp{display:flex;gap:4px;margin-top:10px}
+.chp span{min-width:0;font-size:15px;line-height:1.25;color:var(--mut);white-space:nowrap}
+.chp span:last-child{text-align:right}
+.chp b{display:block;font:800 30px/1 var(--hd);color:var(--tekst)}
+.cena{margin:36px 0 0;padding:clamp(24px,3.4vw,38px);border-radius:20px;background:linear-gradient(135deg,rgba(254,106,0,.22),var(--pl) 70%);border:1px solid rgba(254,106,0,.45);max-width:820px}
+.cena .cl{margin:0 0 10px;font:700 17px/1.3 'Sofia Sans';color:var(--or2)}
+.cena .ch{margin:0 0 14px;font:800 clamp(40px,5.6vw,64px)/1 var(--hd);color:var(--tekst)}
+.cena .cd{margin:0;color:var(--tx2)}
+.chest{margin:18px 0 0;padding:22px;border-left:3px solid var(--or);background:rgba(254,106,0,.09);border-radius:0 14px 14px 0;max-width:46em}
+.chest p{margin:0;color:var(--tx2)}
+.chest b{color:var(--tekst)}
+
+/* 9. встреча */
+.e9 .svet{position:absolute;inset:0;background:radial-gradient(50% 60% at 15% 30%,rgba(254,106,0,.22),transparent 70%);pointer-events:none}
+.e9 h2{max-width:17em}
+.avtor{display:flex;align-items:center;gap:16px;margin-top:8px}
+.avtor img.f{width:84px;height:84px;border-radius:50%;object-fit:cover}
+.avtor img.e{width:48px;height:48px;clip-path:inset(0 0 9% 0)}
+.avtor b{display:block;font-size:20px}
+.avtor span{font-size:16px;color:var(--mut)}
+.svyaz{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 16px}
+.knopka{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:14px 26px;border-radius:14px;background:var(--or);color:#1a0c02;font:700 19px/1 'Sofia Sans';text-decoration:none}
+.knopka.vt{background:transparent;color:var(--tekst);border:1.5px solid var(--li)}
+.knopka svg{width:22px;height:22px;flex:none}
+.kont{font-size:15px;color:var(--mut);margin:0}
+.kont a{color:var(--mut)}
+
+@media (max-width:900px){
+ .e0{display:block;min-height:0;padding-top:0}
+ .e0 .lico{width:100%;height:min(125vw,82vh);object-position:50% 18%;
+  -webkit-mask-image:linear-gradient(to bottom,#000 44%,transparent 82%);mask-image:linear-gradient(to bottom,#000 44%,transparent 82%)}
+ .e0 .svet{background:radial-gradient(90% 46% at 50% 24%,rgba(254,106,0,.36),transparent 70%)}
+ .e0 .in{position:static;padding-top:calc(min(125vw,82vh) * .64)}
+ .e0 .tekst{max-width:640px}
+ .e0 h1{text-shadow:0 2px 18px rgba(0,0,0,.7)}
+ .emb{position:absolute;top:18px;left:18px;width:52px;height:52px;margin:0;z-index:2}
+ .fk{grid-template-columns:1fr}
+ .ref{grid-template-columns:repeat(3,1fr)}
+ .stg,.stg2,.dv{grid-template-columns:1fr}
+ .et{grid-template-columns:1fr}
+ .et li{display:block}
+ .prv{margin-top:14px!important}
+}
+@media (max-width:640px){
+ body{font-size:17px}
+ .ek{padding-left:18px;padding-right:18px}
+ .plit{grid-template-columns:1fr 1fr;gap:22px 16px}
+ .obsh{grid-template-columns:1fr}
+ .obz li{margin-left:calc(var(--n) * 9%)}
+ .obz a{gap:12px;padding:10px 12px;min-height:70px}
+ .obz .sn{font-size:40px;min-width:22px}
+ .obz .stt{font-size:16px}
+ .obz .stt b{font-size:24px}
+ .stp header{gap:14px}
+ .tchg{grid-template-columns:repeat(24,1fr);gap:2px}
+ .lpr{grid-template-columns:1fr}
+ .ref{grid-template-columns:1fr 1fr;gap:26px 14px}
+ .ref h3{font-size:22px}
+ .cf{gap:10px}
+ .cf b{font-size:21px}
+ .fm{grid-template-columns:1fr;grid-template-areas:"h" "o" "r";gap:0}
+ .fmo{display:grid;grid-template-columns:116px 1fr;gap:14px;align-items:center;margin:4px 0 22px}
+ .fmo figcaption{margin:0}
+ .fst li{grid-template-columns:1fr;gap:6px}
+ .cep{flex-direction:column;align-items:flex-start;gap:4px}
+ .cep .ar{transform:rotate(90deg);margin:4px 0 4px 14px}
+ .cep .ar.net{margin:10px 0 10px 6px}
+ .vor li{grid-template-columns:76px 1fr;column-gap:16px}
+ .vs{font-size:28px}
+ .vt p b{font-size:24px}
+ .pkg{margin-left:32px;flex-basis:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ob img{transition:none}}
+.per3{position:sticky;top:0;z-index:50;display:flex;justify-content:center;gap:6px;padding:8px 10px;background:rgba(14,12,11,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,190,140,.15);font:600 14px/1.2 system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+.per3 a{color:#e2d9cf;text-decoration:none;padding:7px 12px;border-radius:999px;white-space:nowrap}
+.per3 a:hover{background:rgba(255,106,0,.15)}
+.per3 a.on{background:#FE6A00;color:#fff}
+@media(max-width:480px){.per3{gap:0;padding:6px 2px;font-size:14px;flex-wrap:wrap}.per3 a{padding:6px 7px}}
+</style>
+</head>
+<body>
+<nav class="per3"><a href="https://ilin20vek.github.io/bobrov-rilsy/">Рилсы подкаста</a><a href="https://ilin20vek.github.io/bobrov-plan/" class="on">План канала</a><a href="https://ilin20vek.github.io/bobrov-plan/scenarii.pdf" target="_blank">Сценарии съёмки</a></nav>
+
+<main>
+<section class="ek e0" id="e0">
+ <div class="svet"></div>
+ <img class="lico" src="i/lico.webp" alt="Дмитрий Бобров" width="864" height="1080">
+ <div class="in">
+  <img class="emb" src="i/bpr.png" alt="«Бизнес по-русски»" width="64" height="64">
+  <div class="tekst">
+   <h1><span class="obr">Дмитрий,</span> вот как в Вашей теме собирают <span class="c">сотни тысяч</span> зрителей. И как пройти этот путь Вам.</h1>
+   <div class="podp"><img src="i/igor.webp" alt="Игорь Ильин" width="160" height="160"><p>Бизнес-план канала на YouTube и в Instagram. Игорь Ильин, «Бизнес по-русски», ноябрь 2026.</p></div>
+   <a class="pov" href="#e1"><span class="pk"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"/></svg></span>листайте</a>
+  </div>
+ </div>
+</section>
+<section class="ek" id="e1">
+ <div class="in">
+  <p class="nom">Где Вы сейчас</p>
+  <h2>Люди Вас уже смотрят. Канал пока их не удерживает.</h2>
+  <div class="tx"><p>На канале 216 подписчиков, 29 выпусков и 54 коротких ролика. Короткие собрали 62 553 просмотра, длинные - 16 455. Лучший выпуск - подкаст с Кириллом Сарычевым, 11 699 просмотров. В Telegram за Вами 5 142 человека - больше, чем на YouTube, в 24 раза.</p></div>
+  <figure class="plit">
+   <div class="vy"><b>216</b><span>подписчики на YouTube</span></div><div><b>62 553</b><span>просмотры коротких роликов</span></div><div><b>16 455</b><span>просмотры длинных выпусков</span></div><div><b>5 142</b><span>подписчики в Telegram</span></div>
+   <figcaption class="ist">YouTube и Telegram, 08.11.2026</figcaption>
+  </figure>
+  <h3 class="pz">Вы снимаете в трёх форматах. Каждый теряет зрителя на своей ступени.</h3>
+  <div class="fk">
+   <article><p class="obv">обрыв<span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span></p><h4>Короткий ролик-ответ.</h4><p>54 ролика, обычно <span class="nw">1 200-1 470 </span>просмотров, лучший - 2 110 («Есть ли будущее у маркетплейсов»). Обрыв на первой ступени: ролик начинается с общего вопроса вроде «Главная характеристика зрелой личности. Какая?», в первую секунду нет ни предмета, ни ставки, и лента не несёт его дальше тех, кому и так показала.</p></article><article><p class="obv">обрыв<span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span></p><h4>Подкаст с гостем.</h4><p>Выпуск с Кириллом Сарычевым - 11 699 просмотров, выпуск с Игорем Малининым - 179. Обрыв на второй ступени: зрители пришли к гостю и ушли вместе с ним. Почти двенадцать тысяч просмотров, а подписчиков на канале - двести с небольшим.</p></article><article><p class="obv">обрыв<span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span></p><h4>Длинный разбор в одиночку.</h4><p>ИИ, маркетплейсы, пожар на складе: обычно около 150 просмотров. Обрыв на первой ступени: длинное видео площадка показывает своим, а своих пока 216.</p></article>
+  </div>
+  <div class="obsh"><p class="obv">у всех трёх<span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 3</span></p><p>И у всех трёх обрыв на третьей ступени: в описаниях только ссылки на соцсети, повода прийти в Telegram или записаться на консультацию нет.</p></div>
+  <div class="vyvod"><p>Снимать Вы умеете, и темы верные: ИИ и работа, самодисциплина, маркетплейсы собирают у Вас больше всего. Но форма «эксперт отвечает на вопрос» у Вас та же, что у сотни экспертов. А три Ваши редкие стороны - экономист, бывший глава района, девять лет силового спорта - в кадре не видны.</p></div>
+ </div>
+</section>
+<section class="ek e2" id="e2">
+ <div class="in">
+  <p class="nom">Главное: лестница из четырёх ступеней</p>
+  <h2>Каждая ступень - отдельная работа. Канал падает с той, которую пропустили.</h2>
+  <ol class="obz" aria-label="Лестница из четырёх ступеней, снизу вверх"><li style="--n:0"><a href="#s1"><span class="sn">1</span><span class="stt"><b>Монтаж</b> - ещё не просмотры</span></a></li><li style="--n:1"><a href="#s2"><span class="sn">2</span><span class="stt"><b>Просмотры</b> - ещё не подписчики</span></a></li><li style="--n:2"><a href="#s3"><span class="sn">3</span><span class="stt"><b>Подписчики</b> - ещё не продажи</span></a></li><li style="--n:3"><a href="#s4"><span class="sn">4</span><span class="stt"><b>Продажи</b> - ещё не постоянные клиенты</span></a></li></ol>
+  
+  <article class="stp" id="s1">
+   <header><span class="snb">1</span><div><p class="sl"><svg class="ms big" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>Ступень 1</p><h3>Монтаж - ещё не просмотры</h3></div></header>
+   <div class="stg">
+    <div><p class="lb">Что мешает</p><p>Количество роликов само ничего не даёт. У Игоря Манна на канале 684 коротких ролика, лучший собрал 44 362 просмотра. У Игоря Рызова роликов почти столько же, 821, а лучший - 6 845 189. Разница в сто пятьдесят раз решается в первые две секунды: о чём ролик и какой первой фразой начинается. У Рызова ролик-миллионер начинается вопросом, который задавал себе каждый: «Как сбить цену при покупке товара?»</p></div>
+    <div class="spr"><p class="lb">Пример</p><div class="bar2">
+ <div class="po"><div class="pl"><span>Игорь Манн · 684 ролика</span><b>44 362</b></div><div class="tr"><i style="--w:0.648%"></i></div></div>
+ <div class="po"><div class="pl"><span>Игорь Рызов · 821 ролик</span><b class="vy">6 845 189</b></div><div class="tr"><i class="or" style="--w:100%"></i></div></div>
+ <p class="ist">лучший короткий ролик канала, просмотры</p>
+</div></div>
+   </div>
+   <div class="smy"><p class="lb">Что делаем мы</p><p>тему берём из тех, на которые в Вашей нише уже доказан спрос; первая фраза - вопрос или боль зрителя; длина <span class="nw">15-60 </span>секунд.</p></div>
+  </article>
+  <article class="stp" id="s2">
+   <header><span class="snb">2</span><div><p class="sl"><svg class="ms big" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>Ступень 2</p><h3>Просмотры - ещё не подписчики</h3></div></header>
+   <div class="stg">
+    <div><p class="lb">Что мешает</p><p>У Вас 79 тысяч просмотров и 216 подписчиков: подписывается примерно каждый трёхсот шестидесятый зритель. Человек посмотрел ролик и пролистал дальше, потому что не понял, что завтра будет ещё такой же. Подписываются на серию: узнаваемый формат, одно и то же начало, обещание следующего выпуска.</p></div>
+    <div class="spr"><p class="lb">Пример</p><div class="tch"><div class="tchg" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i></div>
+ <p class="ist"><span class="tz"></span>360 зрителей · <span class="tz on"></span>1 подписался</p></div></div>
+   </div>
+   <div class="smy"><p class="lb">Что делаем мы</p><p>каждый формат - серия с узнаваемым началом; в конце ролика - зачем подписаться.</p></div>
+  </article>
+  <article class="stp" id="s3">
+   <header><span class="snb">3</span><div><p class="sl"><svg class="ms big" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>Ступень 3</p><h3>Подписчики - ещё не продажи</h3></div></header>
+   <div class="stg">
+    <div><p class="lb">Что мешает</p><p>Лидеры Вашей темы ведут зрителя дальше подписки. Шапка канала - бот, тест или заявка - и только потом обучение, консультация, клуб. У Рызова из описания роликов ведёт ссылка на демо-урок и бот в Telegram. У Петра Осипова - тест или игра, после неё бот. У Вас есть Telegram и форма «Обсудим вашу задачу» на сайте, но из роликов к ним дороги нет.</p></div>
+    <div class="spr"><p class="lb">Пример</p><div class="dor">
+ <div class="dr"><b>Игорь Рызов</b><div class="cep"><span>ролик</span><svg class="ar" viewBox="0 0 28 12" aria-hidden="true"><path d="M1 6h24M20 1.5 25.5 6 20 10.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>демо-урок и бот в Telegram</span></div></div>
+ <div class="dr"><b>Пётр Осипов</b><div class="cep"><span>ролик</span><svg class="ar" viewBox="0 0 28 12" aria-hidden="true"><path d="M1 6h24M20 1.5 25.5 6 20 10.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>тест или игра</span><svg class="ar" viewBox="0 0 28 12" aria-hidden="true"><path d="M1 6h24M20 1.5 25.5 6 20 10.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>бот</span></div></div>
+ <div class="dr vy"><b>Вы</b><div class="cep"><span>ролик</span><svg class="ar net" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8h12M27 8h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 4"/><path d="M16 3l8 10M24 3l-8 10" fill="none" stroke="#FE6A00" stroke-width="2.4" stroke-linecap="round"/></svg><span>Telegram</span><span>форма «Обсудим вашу задачу»</span></div></div>
+</div></div>
+   </div>
+   <div class="smy"><p class="lb">Что делаем мы</p><p>ссылка с меткой в каждом ролике; в Telegram - закреплённое «с чего начать» и бесплатный материал; видно, какой ролик привёл человека.</p></div>
+  </article>
+  <article class="stp" id="s4">
+   <header><span class="snb">4</span><div><p class="sl"><svg class="ms big" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="on"/></svg>Ступень 4</p><h3>Продажи - ещё не постоянные клиенты</h3></div></header>
+   <div class="stg">
+    <div><p class="lb">Что мешает</p><p>Первая покупка у лидеров - недорогая дверь, за ней лестница продуктов. У Радислава Гандапаса: книги, открытые тренинги, коучинг на полгода, клуб по заявке. У Рызова: книги, онлайн-обучение, очные семинары, корпоративное обучение и наставничество. Доход приносит не первая покупка, а то, сколько раз человек возвращается. У Вас лестница уже есть на сайте: лекция, диагностическая сессия, консультация, проектное сопровождение, выступление. Её осталось связать с каналом.</p></div>
+    <div class="spr"><p class="lb">Пример</p><div class="lpr">
+ <div class="lp"><b>Радислав Гандапас</b><ol><li style="--k:0">книги</li><li style="--k:1">открытые тренинги</li><li style="--k:2">коучинг на полгода</li><li style="--k:3">клуб по заявке</li></ol></div>
+ <div class="lp"><b>Игорь Рызов</b><ol><li style="--k:0">книги</li><li style="--k:1">онлайн-обучение</li><li style="--k:2">очные семинары</li><li style="--k:3">корпоративное обучение и наставничество</li></ol></div>
+ <div class="lp vy"><b>Вы, на сайте</b><ol><li style="--k:0">лекция</li><li style="--k:1">диагностическая сессия</li><li style="--k:2">консультация</li><li style="--k:3">проектное сопровождение</li><li style="--k:4">выступление</li></ol></div>
+ <p class="ist">снизу - первая покупка, выше - следующие</p>
+</div></div>
+   </div>
+   
+  </article>
+ </div>
+</section>
+<section class="ek" id="e3">
+ <div class="in">
+  <p class="nom">Кто уже прошёл этот путь в Вашей теме</p>
+  <h2>Десять каналов о деньгах, управлении и людях, которые выросли на коротких роликах.</h2>
+  <div class="tx"><p>Три круга: экономика простым языком, управление и карьера, учёные и сильные личности. Нажмите на обложку - откроется ролик.</p></div>
+  <ul class="ref"><li><a class="ob" href="https://www.youtube.com/shorts/JNX0LV86MTY" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Простая экономика, «Украина и российский газ»"><img src="i/ref/JNX0LV86MTY.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Простая экономика</h3>
+  <p class="cf"><span><b>1,33 млн</b>подписчики</span><span><b>15 198 152</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>экономика вопросом-новостью</p></li><li><a class="ob" href="https://www.youtube.com/shorts/MkGGGfIHAyo" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Михаил Хазин, «Почему Жириновский не стал президентом»"><img src="i/ref/MkGGGfIHAyo.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Михаил Хазин</h3>
+  <p class="cf"><span><b>465 тыс.</b>подписчики</span><span><b>315 594</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>«почему» в первой строке</p></li><li><a class="ob" href="https://www.youtube.com/shorts/QCg3iyaalbs" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Евгений Коган, «Как страна НАТО помогла России обойти санкции?»"><img src="i/ref/QCg3iyaalbs.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Евгений Коган</h3>
+  <p class="cf"><span><b>145 тыс.</b>подписчики</span><span><b>220 398</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>санкции и деньги - тема с доказанным спросом</p></li><li><a class="ob" href="https://www.youtube.com/shorts/nhsgXv6V4A8" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Игорь Рызов, «Как сбить цену при покупке товара?»"><img src="i/ref/nhsgXv6V4A8.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Игорь Рызов</h3>
+  <p class="cf"><span><b>697 тыс.</b>подписчики</span><span><b>6 845 189</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>практичный вопрос и ответ за 27 с</p></li><li><a class="ob" href="https://www.youtube.com/shorts/FDuKe4AoySg" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Радислав Гандапас, «Мне 30+, а я ничего не достиг в жизни»"><img src="i/ref/FDuKe4AoySg.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Радислав Гандапас</h3>
+  <p class="cf"><span><b>662 тыс.</b>подписчики</span><span><b>1 351 334</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>боль зрителя от первого лица</p></li><li><a class="ob" href="https://www.youtube.com/shorts/-NEvq22GpmQ" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Игорь Рыбаков, «Ответ Тинькову»"><img src="i/ref/-NEvq22GpmQ.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Игорь Рыбаков</h3>
+  <p class="cf"><span><b>2,62 млн</b>подписчики</span><span><b>9 651 517</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>спор с известным именем</p></li><li><a class="ob" href="https://www.youtube.com/shorts/0csKJ85Q-aA" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Пётр Осипов, «Она сделала бизнес на овечках...»"><img src="i/ref/0csKJ85Q-aA.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Пётр Осипов</h3>
+  <p class="cf"><span><b>224 тыс.</b>подписчики</span><span><b>2 800 195</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>история человека и деньги</p></li><li><a class="ob" href="https://www.youtube.com/shorts/0-cndjN0wMY" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Михаил Дашкиев, «Не суди о книге по обложке»"><img src="i/ref/0-cndjN0wMY.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Михаил Дашкиев</h3>
+  <p class="cf"><span><b>108 тыс.</b>подписчики</span><span><b>813 666</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>урок из чужого вирусного клипа</p></li><li><a class="ob" href="https://www.youtube.com/shorts/BLdzGR_nxm8" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Александр Панчин, «Доказательство игрового мышления птиц»"><img src="i/ref/BLdzGR_nxm8.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Александр Панчин</h3>
+  <p class="cf"><span><b>505 тыс.</b>подписчики</span><span><b>3 289 937</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>учёный объясняет любопытный факт за 17 с</p></li><li><a class="ob" href="https://www.youtube.com/shorts/wpWNAaPIQGY" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Кирилл Сарычев, рекорд Смаева"><img src="i/ref/wpWNAaPIQGY.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a>
+  <h3>Кирилл Сарычев</h3>
+  <p class="cf"><span><b>1,7 млн</b>подписчики</span><span><b>613 622</b>просмотры ролика</span></p>
+  <p class="vz"><span>что взять</span>Ваш гость: сила и личность</p></li></ul>
+ </div>
+</section>
+<section class="ek" id="e4">
+ <div class="in">
+  <p class="nom">Что объединяет ролики-миллионники</p>
+  <h2>Пять принципов, которые повторяются у всех десяти.</h2>
+  <ol class="prn"><li><span class="pnm">1</span><h3>Коротко.</h3><p><span class="nw">15-60 </span>секунд. У Рызова ролики-миллионники длятся <span class="nw">19-27 </span>секунд.</p></li><li><span class="pnm">2</span><h3>Первая фраза - вопрос или боль.</h3><p>«Как сбить цену?», «Мне 30+, а я ничего не достиг». Общих рассуждений среди лучших роликов нет.</p></li><li><span class="pnm">3</span><h3>Тема с доказанным спросом.</h3><p>Переговоры и цена, собеседование, самооценка, деньги, санкции - на них уже собраны миллионы. Ваши темы - антикризисное управление, рынок труда, экономика - лежат рядом.</p></li><li><span class="pnm">4</span><h3>Лицо и крупный титр.</h3><p>Говорящая голова или разговор, нарезанный кусками, с крупными субтитрами; у растущих сейчас - разбор чужого вирусного видео.</p></li><li><span class="pnm">5</span><h3>Каждый ролик ведёт дальше.</h3><p>Шапка, бот, тест или заявка - у всех, кто зарабатывает на канале.</p></li></ol>
+ </div>
+</section>
+<section class="ek" id="e5">
+ <div class="in">
+  <p class="nom">Новые форматы для Вас</p>
+  <h2>Пять форматов, в которых Вы выступаете иначе.</h2>
+  <div class="tx"><p>Не нарезка снятого, а новые серии. В каждой с первой секунды видно то, чего нет ни у кого в Вашей нише: экономист, бывший глава района и человек из силового спорта в одном лице. Форматы отличаются не темой, а тем, как устроен ролик.</p></div>
+  
+  <article class="fm" id="f1">
+   <div class="fmh">
+    <p class="fnum">5.1</p>
+    <h3>«Бывший мэр объясняет»</h3>
+    <p>Бытовой вопрос, который задавал себе каждый: почему асфальт кладут под дождём, почему двор не чинят годами, как добиться ответа от администрации. И ответ человека, который сидел по ту сторону стола.</p>
+    <p><b>Почему Вы:</b> власть и деньги в Вашей нише объясняют аналитики и безликие каналы. Никто не может сказать «я сам это подписывал».</p>
+   </div>
+   <figure class="fmo"><a class="ob" href="https://www.youtube.com/shorts/AKaG64RMvR0" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: «Простая экономика», «Кто владеет Газпромом?»"><img src="i/ref/AKaG64RMvR0.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a><figcaption><b>Образец:</b> «Простая экономика», «Кто владеет Газпромом?» - 6 778 394 просмотра. Спрос на устройство власти огромный, а лица у канала нет.</figcaption></figure>
+   <div class="fmr">
+    <div class="ff"><p class="lb">Первая фраза пробного ролика</p><p class="rem">(на ходу, у свежей заплатки асфальта):</p><blockquote>«Почему асфальт кладут под дождём? Я был главой района. Сейчас расскажу, как это решается на самом деле».</blockquote></div>
+    <p class="lb">Ступени</p>
+    <ul class="fst"><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span><span>вопрос понятен любому без подготовки, и в первой же фразе ясно, кто отвечает</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span><span>серия с номером, следующий вопрос берём из комментариев, человек подписывается, чтобы увидеть ответ на свой</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 3</span><span>в Telegram шаблон обращения, на которое обязаны ответить.</span></li></ul>
+    <p class="sy"><b>Съёмка:</b> улица или двор любого города, 1,5 часа на <span class="nw">8-10 </span>вопросов, Вы в кадре один.</p>
+   </div>
+  </article>
+  <article class="fm" id="f2">
+   <div class="fmh">
+    <p class="fnum">5.2</p>
+    <h3>«Вердикт экономиста»</h3>
+    <p>Чужой вирусный ролик про деньги, работу или ИИ - пять секунд цитаты, стоп, и за сорок секунд Ваш вердикт: где правда, где ошибка, что делать зрителю.</p>
+    <p><b>Почему Вы:</b> право сказать «это неверно» Вам даёт учёная степень по экономике, а опыт главы района - знание того, как деньги считают на практике. Темы Ваши - ИИ и работа, маркетплейсы, меняется только устройство ролика.</p>
+   </div>
+   <figure class="fmo"><a class="ob" href="https://www.youtube.com/shorts/lsYGClviidY" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Александр Панчин, «Существует ли Бог? Ответ астрофизика.»"><img src="i/ref/lsYGClviidY.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a><figcaption><b>Образец:</b> Александр Панчин, «Существует ли Бог? Ответ астрофизика.» - 3 332 398 просмотров: учёный отвечает на чужое вирусное.</figcaption></figure>
+   <div class="fmr">
+    <div class="ff"><p class="lb">Первая фраза</p><p class="rem">пять секунд ролика «бросай работу, живи на пассивный доход» - стоп-кадр - Вы:</p><blockquote>«Как экономист говорю: в этом совете одна ошибка. И она стоит Вам работы».</blockquote></div>
+    <p class="lb">Ступени</p>
+    <ul class="fst"><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span><span>первая секунда - чужой кадр, который уже доказал, что его смотрят</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span><span>каждый выпуск кончается оценкой «верно / неверно / опасно», зрители сами присылают ролики на вердикт</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 3</span><span>в Telegram полный разбор.</span></li></ul>
+    <p class="sy"><b>Съёмка:</b> стол, 1 час на <span class="nw">8-10 </span>вердиктов. Подборку роликов недели и тезисы готовим мы, Вы соглашаетесь или правите. Разбираем совет, а не человека.</p>
+   </div>
+  </article>
+  <article class="fm" id="f3">
+   <div class="fmh">
+    <p class="fnum">5.3</p>
+    <h3>«Посчитаем»</h3>
+    <p>Бытовое денежное решение - машина или такси, ипотека или аренда, своё дело или найм. Вы считаете маркером на листе при зрителе и говорите вывод.</p>
+    <p><b>Почему Вы:</b> лист и маркер для экономиста и преподавателя - свой инструмент, а не декорация. Число появляется в кадре Вашей рукой.</p>
+   </div>
+   <figure class="fmo"><a class="ob" href="https://www.youtube.com/shorts/U4Q_JgchEIM" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Пётр Осипов, «Мне нужно минимум 1 000 000»"><img src="i/ref/U4Q_JgchEIM.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a><figcaption><b>Образец:</b> Пётр Осипов, «Мне нужно минимум 1 000 000» - 2 180 997 просмотров: деньги конкретной суммой.</figcaption></figure>
+   <div class="fmr">
+    <div class="ff"><p class="lb">Первая фраза</p><p class="rem">(рука уже пишет на листе):</p><blockquote>«Машина за два миллиона обходится Вам дороже двух миллионов. Считаю при Вас».</blockquote></div>
+    <p class="lb">Ступени</p>
+    <ul class="fst"><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span><span>в первом кадре рука пишет число</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span><span>серия «присылайте своё решение - посчитаю», следующий расчёт может оказаться про кредит зрителя</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 3</span><span>в Telegram таблица, куда подставить свои цифры.</span></li></ul>
+    <p class="sy"><b>Съёмка:</b> стол, лист А3, маркер, 1 час на <span class="nw">5-6 </span>расчётов. Расчёты Ваши, мы выбираем темы и проверяем, что числа сходятся.</p>
+   </div>
+  </article>
+  <article class="fm" id="f4">
+   <div class="fmh">
+    <p class="fnum">5.4</p>
+    <h3>«Собеседование у проректора»</h3>
+    <p>Короткая сцена: соискатель говорит типичную фразу, Вы останавливаете сцену и объясняете в камеру, где он проиграл и как надо.</p>
+    <p><b>Почему Вы:</b> совет про собеседование от того, кто нанимает, весит больше совета тренера. Вы директор института и первый проректор.</p>
+   </div>
+   <figure class="fmo"><a class="ob" href="https://www.youtube.com/shorts/YAWpfH-eWXA" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Игорь Рызов, «Каверзные вопросы на собеседовании»"><img src="i/ref/YAWpfH-eWXA.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a><figcaption><b>Образец:</b> Игорь Рызов, «Каверзные вопросы на собеседовании» - 2 506 992 просмотра.</figcaption></figure>
+   <div class="fmr">
+    <div class="ff"><p class="lb">Первая фраза</p><p class="rem">соискатель: «Ну... а сколько Вы предлагаете?» - стоп-кадр - Вы:</p><blockquote>«Всё. Он только что проиграл торг. Одной фразой».</blockquote></div>
+    <p class="lb">Ступени</p>
+    <ul class="fst"><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span><span>в первую секунду ошибка видна в действии</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span><span>«один вопрос собеседования - один выпуск», зритель готовится к своему и ждёт следующего</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 3</span><span>в Telegram вопросы, которые Вы задаёте на собеседовании, и что за ними стоит.</span></li></ul>
+    <p class="sy"><b>Съёмка:</b> кабинет, два стула, второй человек в кадре, <span class="nw">1,5-2 </span>часа на <span class="nw">6-8 </span>сцен. Сценки пишем мы, правила и формулировки Ваши.</p>
+   </div>
+  </article>
+  <article class="fm" id="f5">
+   <div class="fmh">
+    <p class="fnum">5.5</p>
+    <h3>«Правила из зала»</h3>
+    <p>Вы в зале у стойки со штангой, в рубашке или пиджаке. Одно правило силового спорта, перенесённое на работу, деньги и самооценку. Одно правило - один ролик.</p>
+    <p><b>Почему Вы:</b> проректор у штанги - противоречие, которое читается без звука. У экспертов ниши такого кадра нет, у силачей нет второй половины - экономики и власти.</p>
+   </div>
+   <figure class="fmo"><a class="ob" href="https://www.youtube.com/shorts/HVtOK4kD4vA" target="_blank" rel="noopener" aria-label="Открыть ролик на YouTube: Михаил Кокляев, «Отвечаем подписчикам»"><img src="i/ref/HVtOK4kD4vA.jpg" alt="" width="540" height="960"><span class="igr"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="#1a0c02"/></svg></span></a><figcaption><b>Образец:</b> Михаил Кокляев, «Отвечаем подписчикам» - 2 082 565 просмотров.</figcaption></figure>
+   <div class="fmr">
+    <div class="ff"><p class="lb">Первая фраза</p><p class="rem">(рука на грифе):</p><blockquote>«Я девять лет таскал железо. И оно научило меня правилу про деньги, которому не учат в университете. А я в университете работаю».</blockquote></div>
+    <p class="lb">Ступени</p>
+    <ul class="fst"><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="on"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 1</span><span>костюм и железо в первом кадре</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="on"/><rect x="16" y="6" width="6" height="18" rx="1" class="of"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 2</span><span>«правило из зала номер N», в начале каждого выпуска Вы кладёте блин на стойку</span></li><li><span class="bdg"><svg class="ms" viewBox="0 0 30 24" aria-hidden="true"><rect x="0" y="18" width="6" height="6" rx="1" class="of"/><rect x="8" y="12" width="6" height="12" rx="1" class="of"/><rect x="16" y="6" width="6" height="18" rx="1" class="on"/><rect x="24" y="0" width="6" height="24" rx="1" class="of"/></svg>ступень 3</span><span>в Telegram план на 30 дней по правилу.</span></li></ul>
+    <p class="sy"><b>Съёмка:</b> зал на час без посетителей, свет, 1,5 часа на <span class="nw">6-8 </span>правил. Поднимать вес не нужно.</p>
+   </div>
+  </article>
+  <div class="start">
+   <h3 class="pz">С чего начнём</h3>
+   <div class="stg2">
+    <div class="tx"><p>Первым - «Бывший мэр объясняет»: его не может повторить никто в нише, и именно он делает канал узнаваемым, а не ещё одним экспертным. В тот же выезд - «Вердикт экономиста»: он быстрее всех снимается и держит выход ролика каждый день. Условие одно: какие вопросы о власти Вы готовы обсуждать как первый проректор, решаете Вы сами до съёмки. Если круг узкий - начинаем с «Вердикта».</p></div>
+    <div class="prio"><div class="pilot"><p class="pkl">пилот</p><a class="pr on" href="#f1"><span class="pn">1</span><b>«Бывший мэр объясняет»</b></a><a class="pr on" href="#f2"><span class="pn">2</span><b>«Вердикт экономиста»</b></a></div><a class="pr" href="#f3"><span class="pn">3</span><b>«Посчитаем»</b><span class=pkg>вторая съёмка</span></a><a class="pr" href="#f4"><span class="pn">4</span><b>«Собеседование у проректора»</b><span class=pkg>месяцы второй-третий</span></a><a class="pr" href="#f5"><span class="pn">5</span><b>«Правила из зала»</b></a></div>
+   </div>
+  </div>
+ </div>
+</section>
+<section class="ek" id="e6">
+ <div class="in">
+  <p class="nom">Воронка: от ролика до постоянного заказчика</p>
+  <h2>Путь человека, который увидел Вас впервые.</h2>
+  <ol class="vor"><li style="--a:1.0;--b:0.86;--o:0.28"><span class="vs">1</span>
+   <div class="vt"><p><b>Ролик</b> в YouTube Shorts и Instagram Reels, каждый день.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем просмотры и досмотр.</p></div></li><li style="--a:0.86;--b:0.72;--o:0.42"><span class="vs">2</span>
+   <div class="vt"><p><b>Подписка</b> - на серию с узнаваемым началом.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем подписки на тысячу просмотров.</p></div></li><li style="--a:0.72;--b:0.6;--o:0.57"><span class="vs">3</span>
+   <div class="vt"><p><b>Telegram</b> - ссылка с меткой в каждом ролике; в канале закреплено «с чего начать».</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем переходы по меткам: видно, какой ролик привёл человека.</p></div></li><li style="--a:0.6;--b:0.5;--o:0.71"><span class="vs tm">4</span>
+   <div class="vt"><p><b>Бесплатный материал</b> в Telegram - памятка из Ваших же выпусков. Например, «План на 72 часа, если в бизнесе пожар»: такой выпуск у Вас уже есть.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем, сколько забрали.</p></div></li><li style="--a:0.5;--b:0.42;--o:0.86"><span class="vs tm">5</span>
+   <div class="vt"><p><b>Заявка</b> на диагностическую сессию - формат с Вашего сайта.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем заявки.</p></div></li><li style="--a:0.42;--b:0.34;--o:1.00"><span class="vs tm">6</span>
+   <div class="vt"><p><b>Работа и повторная работа</b>: консультация, лекция для компании, проектное сопровождение, выступление.</p><p class="sch"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>Считаем оплаты и возвраты.</p></div></li></ol>
+  <div class="tx"><p>Ориентиров по конверсии у лидеров нет: эти цифры никто не публикует. Свои мы увидим за первый месяц и по ним решим, какой шаг воронки чинить первым.</p></div>
+ </div>
+</section>
+<section class="ek" id="e7">
+ <div class="in">
+  <p class="nom">Этапы</p>
+  <h2>От 216 до 100 000: три этапа, у каждого своя проверка.</h2>
+  <div class="tx"><p>Сто тысяч - это в 460 раз больше, чем сейчас. Обещать такое число честно нельзя: просмотры раздаёт площадка. Обещаю другое: на каждом этапе понятно, что должно случиться, чтобы идти дальше.</p></div>
+  <ol class="et"><li class=sei><span class="ed">1</span><h3>Месяц первый: пилот.</h3><p>Первая съёмка - «Бывший мэр» и «Вердикт», ролики на первые две недели. Смотрим не на просмотры, а на то, досматривают ли и переходят ли в Telegram, и решаем, какой формат ведёт. Вторая съёмка - больше ведущего формата и «Посчитаем». Итого 30 роликов, ролик в день в YouTube и Instagram.</p><p class="prv"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Проверка: какой формат досматривают и с какого приходят подписчики.</span></p></li><li><span class="ed">2</span><h3>Месяцы второй-третий: формат-лидер.</h3><p>Снимаем больше того, что сработало, подключаем «Собеседование», воронка в Telegram собрана.</p><p class="prv"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Проверка: переходы и первые заявки.</span></p></li><li><span class="ed">3</span><h3>Дальше: серии и гости.</h3><p>Подкаст с Сарычевым уже собрал больше половины всех просмотров длинных выпусков: гость с именем работает.</p><p class="prv"><svg class="gk" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Проверка: рост подписчиков от месяца к месяцу.</span></p></li></ol>
+ </div>
+</section>
+<section class="ek" id="e8">
+ <div class="in">
+  <p class="nom">Что от Вас и сколько это стоит</p>
+  <h2>От Вас - около восьми часов в месяц. Остальное - наша работа.</h2>
+  <div class="dv">
+   <div class="tx"><p>Новые форматы без Вас в кадре не снять. Две съёмки в месяц по три с половиной часа и час на то, чтобы согласовать темы. Снимаем на телефон с петличкой. Вопросы, сценарии, подборку роликов для «Вердикта» готовлю я. Монтаж, обложки, названия, выкладка по расписанию и разбор - тоже на мне.</p></div>
+   <figure class="chasy">
+    <div class="chl" aria-hidden="true"><i style="flex:3.5"></i><i style="flex:3.5"></i><i class="sv" style="flex:1"></i></div>
+    <div class="chp"><span style="flex:3.5"><b>3,5 ч</b>съёмка</span><span style="flex:3.5"><b>3,5 ч</b>съёмка</span><span style="flex:1"><b>1 ч</b>темы</span></div>
+    <figcaption class="ist">Ваше время в месяц, около 8 часов</figcaption>
+   </figure>
+  </div>
+  <div class="cena">
+   <p class="cl">Первый шаг - месяц пилота:</p>
+   <p class="ch">30 роликов, ролик в день, <span class="nw">30 000 ₽</span>.</p>
+   <p class="cd">Через месяц смотрим на отклик и договариваемся дальше.</p>
+  </div>
+  <div class="chest"><p><b>Честно:</b> просмотры числом не обещаю, этого не может никто. Обещаю ролики каждый день, в каждом - путь дальше, и разбор раз в месяц.</p></div>
+ </div>
+</section>
+<section class="ek e9" id="e9">
+ <div class="svet"></div>
+ <div class="in">
+  <p class="nom">Встреча</p>
+  <h2>Давайте встретимся и выберем формат, с которого начнём. И обсудим, как Вам переплюнуть Радислава Гандапаса.</h2>
+  <div class="avtor">
+   <img class="f" src="i/igor.webp" alt="Игорь Ильин" width="160" height="160">
+   <div><b>Игорь Ильин</b><span>«Бизнес по-русски»</span></div>
+   <img class="e" src="i/bpr.png" alt="" width="64" height="64">
+  </div>
+  <div class="svyaz">
+   <a class="knopka" href="https://t.me/ingvarcrypto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1.3.5-1.2 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.7.4.9.9.9.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.5zM8.3 13.4l9.5-6c.4-.3.9-.1.5.3l-7.8 7.1-.3 3.3z" fill="currentColor"/></svg>Telegram</a>
+   <a class="knopka vt" href="tel:+79166457381"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg><span class="nw">+7 916 645-73-81</span></a>
+  </div>
+  <p class="kont">Игорь Ильин, «Бизнес по-русски». Telegram <a href="https://t.me/ingvarcrypto">https://t.me/ingvarcrypto</a> · <span class="nw">+7 916 645-73-81</span>.</p>
+ </div>
+</section>
+</main>
+</body>
+</html>
